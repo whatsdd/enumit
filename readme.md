@@ -8,6 +8,8 @@ This tool was created in order to automate some basic OSINT tasks for penetratio
 
 ## Installation
 
+1. First ensure that you have UV installed and running: [uv](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer)
+
 - Create virtual enviroment: `python3 -m venv enumit`
 - Activate the virtual enviroment: `source enumit/bin/activate`
 - Install the required packages: `pip install -r requirements.txt`

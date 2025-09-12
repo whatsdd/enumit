@@ -8,7 +8,8 @@ This tool was created in order to automate some basic OSINT tasks for penetratio
 
 ## Installation
 
-1. First ensure that you have UV installed and running: [uv](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer)
+1. First ensure that you have [uv](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer) installed and is in your path.
+2. 
 
 - Create virtual enviroment: `python3 -m venv enumit`
 - Activate the virtual enviroment: `source enumit/bin/activate`
@@ -16,7 +17,14 @@ This tool was created in order to automate some basic OSINT tasks for penetratio
 
 ## Basic Usage
 
-TODO
+### Gather A and AAAA records from crtsh certificates
+
+* `uv run enumit.py --tldn example.local --crtsh --dnsrecord A,AAAA`
+
+### Get a list of pdf's from a domain using google dorking
+
+* `uv run enumit.py --tldn example.local --google pdf`
+* `uv run enumit.py --tldn example.local --google pdf --download`
 
 ## Notice
 
